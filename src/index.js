@@ -13,26 +13,6 @@ const asyncBtn = document.getElementById('async')
 const themeBtn = document.getElementById('theme')
 
 
-// function logger(state) {
-//     return function (next) {
-//         return function (action) {
-//             console.log('Prev State', state.getState())
-//             console.log('Active', action)
-//             const newState = next(action)
-//             console.log('New State', newState)
-//             return newState
-//         }
-//     }
-// }
-
-// const store = createStore(
-//     rootReducer,
-//     compose(
-//         applyMiddleware(thunk, logger),
-//         window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
-//     )
-// )
-
 const store = createStore(
     rootReducer,
     composeWithDevTools(
